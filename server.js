@@ -14,7 +14,7 @@ var path = require('path');
 const bp = require('body-parser');
 const cors = require('cors');
 const restaurantDB = require('./modules/restaurantDB.js'); //reading the file in 
-const db = new restaurantDB();//makes the restaurant object 
+const db = new restaurantDB();//makes the restaurant object! 
 var app = express();//make the express object to use get/post
 app.use(express.static('public'));
 var HTTP_PORT = process.env.PORT || 8080;
